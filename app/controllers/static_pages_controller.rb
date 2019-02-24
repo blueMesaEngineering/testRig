@@ -12,6 +12,10 @@ class StaticPagesController < ApplicationController
   		
   	end
 
+  	def pdf_context
+  		
+  	end
+
   	def contact
   		
   	end
