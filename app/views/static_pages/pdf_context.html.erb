@@ -1,6 +1,18 @@
 <% provide(:title, "PDF Context") %>
 
 <h1>PDF Context</h1>
-<p>
-	Test.
-</p>
+
+<div class="center">
+	<p>
+		Test Rig for retrieving metadata.
+		<%= form_tag("/list", method: "get") do %>
+		  <%= label_tag(:url, "Get metadata:") %>
+		  <%= text_field_tag(:url) %>
+		  <div>
+			  <p>
+			  	<%= submit_tag "Go!",  class: "btn btn-lg btn-primary" %>
+			  </p>
+		  </div>
+		<% end %>
+	</p>
+</div>

@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_17_145519) do
+ActiveRecord::Schema.define(version: 2019_02_25_012211) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "url_data_models", force: :cascade do |t|
+    t.string "url"
+    t.float "pdf_version"
+    t.string "producer"
+    t.string "title"
+    t.string "metadata"
+    t.integer "page_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
