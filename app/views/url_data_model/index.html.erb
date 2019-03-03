@@ -1,0 +1,12 @@
+<% provide(:title, "Metadata List") %>
+
+<h1>All Records</h1>
+
+<ul class="url_data_model">
+	<% @url_data_model.each do |url_data_model| %>
+	<li>
+		<%= url_data_model %>
+	</li>
+	<% end %>
+
+</ul>
