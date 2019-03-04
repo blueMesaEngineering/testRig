@@ -42,7 +42,7 @@ gem 'pdf-reader', '~> 2.2'
 
 gem 'fast_jsonapi', '~> 1.5'
 
-gem 'yomu'
+gem 'docraptor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

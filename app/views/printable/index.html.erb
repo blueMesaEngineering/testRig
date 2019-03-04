@@ -1,0 +1,62 @@
+<style type = "text/css">
+
+	/* Set up the page for DocRaptor specific settings. */
+
+	@page {
+		size: US-Letter;
+		background: #fffff1;
+	}
+
+	body {
+		font-family: 	sans-serif;
+		color: 			#333333;
+		margin:			1 em auto 0;
+		width: 			40 em;
+	}
+
+	th {
+		font-weight:	bold;
+	}
+
+	tr:nth-child(2n) {
+		background-color:	#eeeeee;
+	}
+
+	tr td:first-of-type {
+		text-align: right;
+	}
+
+	tr td:first-of-type, tr th:first-of-type {
+		padding-right: 1em;
+	}
+
+	/* DocRaptor uses print styles by default - hide the download link in the PDF. */
+
+	@media print {
+		.no-print{
+			display.none
+		}
+	
+		tr:nth-child(2n) {
+			background-color: inherit;
+		}	
+	}
+
+</style>
+
+<h1> Printables</h1>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Units Sold</th>
+	</tr>
+	<% @printables.each do |id, units| %>
+		<tr>
+			<td><%= id %></td>
+			<td><%= units %></td>
+		</tr>
+	<% end %>
+</table>
+
+<%= link_to "Download Report", printable_index_path(:format => :pdf), :class => "no-print" %>
