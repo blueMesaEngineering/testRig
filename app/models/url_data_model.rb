@@ -87,7 +87,7 @@ class UrlDataModel < ApplicationRecord
 
 	def buildModelFromURLViaPDF
 
-		convertURLToPDF(@url)
+		convertURLToPDF()
 		readPDFData()
 		deletePDF()
 		
@@ -125,7 +125,7 @@ class UrlDataModel < ApplicationRecord
 	#Date:                          20190304
 	#------------------------------------------------------------------------------
 
-	def convertURLToPDF(url)
+	def convertURLToPDF()
 
 		require "bundler/setup"
 		Bundler.require
@@ -145,7 +145,7 @@ class UrlDataModel < ApplicationRecord
 			errorLogPathName	= "./storage/Logs/Error/"
 			pathName 			= "./storage/PDFs/"
 			# url 				= "http://docraptor.com/examples/invoice.html"
-			# url 				= "http://www.sspro.com"
+			url 				= "http://www.sspro.com"
 
 			fileNamePDF 		= "docraptor-ruby.pdf"
 
