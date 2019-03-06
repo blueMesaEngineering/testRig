@@ -1,0 +1,6 @@
+1 Create the PDF from the URL
+2 Read the PDF data using the pdfreader gem
+3 Build and populate the model from the PDF data by initializing an instance of the model
+4 Store the model
+5 Build the serializer from the model
+6 Display the serializer data

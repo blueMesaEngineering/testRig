@@ -3,9 +3,9 @@
 <h1>All Records</h1>
 
 <ul class="url_data_model">
-	<% @url_data_model.each do |url_data_model| %>
+	<% @url_data_models.each do |url_data_model| %>
 	<li>
-		<%= url_data_model %>
+		<%= url_data_model.pdf_version %>
 	</li>
 	<% end %>
 

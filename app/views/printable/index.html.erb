@@ -46,17 +46,5 @@
 
 <h1> Printables</h1>
 
-<table>
-	<tr>
-		<th>ID</th>
-		<th>Units Sold</th>
-	</tr>
-	<% @printables.each do |id, units| %>
-		<tr>
-			<td><%= id %></td>
-			<td><%= units %></td>
-		</tr>
-	<% end %>
-</table>
 
-<%= link_to "Download Report", printable_index_path(:format => :pdf), :class => "no-print" %>
+
