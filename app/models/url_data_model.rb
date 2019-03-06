@@ -33,7 +33,7 @@ class UrlDataModel < ApplicationRecord
 
 	def initialize(attributes = {})
 
-		@url 			= attributes[:url]
+		# @url 			= attributes[:url]
 		# @pdf_version 	= attributes[:pdf_version]
 		# @producer 		= attributes[:producer]
 		# @title 			= attributes[:title]
