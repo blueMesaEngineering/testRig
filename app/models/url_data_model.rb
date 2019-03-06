@@ -132,7 +132,7 @@ class UrlDataModel < ApplicationRecord
 
 		DocRaptor.configure do |dr|
 
-		  dr.username  = "YOUR_API_KEY_HERE" # this key works for test documents
+		  dr.username  = "9ij74xpTsWnbT1APOcl" # this key works for test documents
 		  # dr.debugging = true
 
 		end
