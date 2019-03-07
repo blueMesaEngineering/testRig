@@ -1,13 +1,12 @@
 
 
-# Ruby on Rails Tutorial Test Rig application
+# Test Rig application
 
-This is the Test Rig application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+This is the Test Rig application.  The purpose is to build a CRUD application to interface with DocRaptor.
 
 ## License
+
+One of the most helpful books I've read on anything, ever:
 
 All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
 is available jointly under the MIT License and the Beerware License. See
@@ -40,4 +39,11 @@ $ rails server
 ```
 
 For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book)
+
+[*Ruby on Rails Guides*](https://guides.rubyonrails.org/getting_started.html)
+
+[*DocRaptor Documentation*](http://docraptor.com/)
+
+[*Heroku Application*](https://sleepy-shore-85759.herokuapp.com/)
+
