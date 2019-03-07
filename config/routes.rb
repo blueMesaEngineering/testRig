@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   get  '/about',   		     to: 'static_pages#about'
   get  '/contact', 		     to: 'static_pages#contact'
   get  '/new_model', 	     to: 'url_data_model#new'
-  get  '/list',            to: 'url_data_model#create'
-  
+  # get  '/list',            to: 'url_data_model#create'
+  get  '/test',            to: 'url_data_model#create' 
+
   resources :url_data_model
   
 end
