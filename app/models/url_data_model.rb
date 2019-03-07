@@ -20,7 +20,7 @@ class UrlDataModel < ApplicationRecord
 	#
 	#                                   -----
 	#
-	#Calls:                         buildModelFromURLViaPDF
+	#Calls:                         N/A
 	#
 	#Called By:                     class
 	#
@@ -33,12 +33,30 @@ class UrlDataModel < ApplicationRecord
 
 	def initialize(attributes = {})
 
-		# @url 			= attributes[:url]
-		# @pdf_version 	= attributes[:pdf_version]
-		# @producer 		= attributes[:producer]
-		# @title 			= attributes[:title]
-		# @metadata 		= attributes[:metadata]
-		# @page_count 	= attributes[:page_count]
+		# if(attributes[:url] != nil)
+		# 	@url 			= attributes[:url]
+		# end
+
+		# if(attributes[:pdf_version] != nil)
+		# 	@pdf_version 	= attributes[:pdf_version]
+		# end
+
+		# if(attributes[:producer] != nil)		
+		# 	@producer 		= attributes[:producer]
+		# end
+			
+		# if(attributes[:title] != nil)
+		# 	@title 			= attributes[:title]
+		# end
+			
+		# if(attributes[:metadata] != nil)
+		# 	@metadata 		= attributes[:metadata]
+		# end
+			
+		# if(attributes[:page_count] != nil)
+		# 	@page_count 	= attributes[:page_count]
+		# end
+
 		buildModelFromURLViaPDF
 	end
 
@@ -47,10 +65,35 @@ class UrlDataModel < ApplicationRecord
 
 
 
+
+	#------------------------------------------------------------------------------
+	#Name:                          after_initialize
+	#
+	#Purpose:                       To provide a constructor for the class.
+	#
+	#Precondition:                  An instance of UrlDataModel, url_data_model,
+	# 								exists.
+	#
+	#Postcondition:                 url_data_model is populated by 
+	# 								buildModelFromURLViaPDF
+	#
+	#                                   -----
+	#
+	#Calls:                         buildModelFromURLViaPDF
+	#
+	#Called By:                     class
+	#
+	#                                   -----
+	#Additional Comments: 			
+	#
+	#Programmer:                    ND Guthrie
+	#Date:                          20190305
+	#------------------------------------------------------------------------------
+
 	def after_initialize()
 
 		# buildModelFromURLViaPDF
-		
+
 	end
 
 
@@ -132,7 +175,7 @@ class UrlDataModel < ApplicationRecord
 
 		DocRaptor.configure do |dr|
 
-		  dr.username  = "9ij74xpTsWnbT1APOcl" # this key works for test documents
+		  dr.username  = "YOUR_API_KEY_HERE" # this key works for test documents
 		  # dr.debugging = true
 
 		end

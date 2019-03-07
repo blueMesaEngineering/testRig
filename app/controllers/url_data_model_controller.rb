@@ -38,6 +38,38 @@ class UrlDataModelController < ApplicationController
 
 
 
+
+	#------------------------------------------------------------------------------
+	#Name:                          new
+	#
+	#Purpose:                       
+	#
+	#Precondition:                  
+	#
+	#Postcondition:                 
+	#
+	#                                   -----
+	#
+	#Calls:                         
+	#
+	#Called By:                     printable_controller.rb
+	#
+	#                                   -----
+	#Additional Comments: 			
+	#
+	#Programmer:                    ND Guthrie
+	#Date:                          20190306
+	#------------------------------------------------------------------------------
+
+	def new
+		
+	end
+
+
+
+
+
+
 	#------------------------------------------------------------------------------
 	#Name:                          show
 	#
@@ -104,7 +136,14 @@ class UrlDataModelController < ApplicationController
 
 		@url_data_model = UrlDataModel.new(modelParams)
 
+		# if @url_data_model.save
+		# 	redirect_to @url_data_model
+		# else
+		# 	render 'new'
+		# end
+
 		render 'show'
+
 
 	end
 
@@ -114,7 +153,7 @@ class UrlDataModelController < ApplicationController
 	private
 
 		def modelParams
-			params.require(:model).permit(:url)			
+			params.require(:url_data_model).permit(:url)			
 		end
 
 
