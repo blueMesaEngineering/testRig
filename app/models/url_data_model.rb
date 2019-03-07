@@ -188,7 +188,8 @@ class UrlDataModel < ApplicationRecord
 			errorLogPathName	= "./storage/Logs/Error/"
 			pathName 			= "./storage/PDFs/"
 			# url 				= "http://docraptor.com/examples/invoice.html"
-			url 				= "http://www.sspro.com"
+			url 				= "http://www.docraptor.com"
+			@url = url
 
 			fileNamePDF 		= "docraptor-ruby.pdf"
 
@@ -280,7 +281,6 @@ class UrlDataModel < ApplicationRecord
 
 		PDF::Reader.open(fileName) do |reader|
 			
-			# @url 			= reader.url
 			@pdf_version 	= reader.pdf_version
 			# @producer 		= reader.producer
 			# @title 			= reader.title

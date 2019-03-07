@@ -46,3 +46,7 @@ For more information, see the
 [*DocRaptor Documentation*](http://docraptor.com/)
 
 [*Heroku Application*](https://sleepy-shore-85759.herokuapp.com/)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49f547367d8745c6d1d891ea8fb18a914943c424

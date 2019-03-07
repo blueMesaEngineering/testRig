@@ -1,4 +1,3 @@
 class PrintableController < ApplicationController
 
-
 end
